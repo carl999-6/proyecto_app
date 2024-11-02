@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Imagen del Producto -->
+        <ImageView
+            android:id="@+id/detailProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/light_background"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/laptop" />
+
+        <!-- Nombre del Producto -->
+        <TextView
+            android:id="@+id/detailProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Marca del Producto -->
+        <TextView
+            android:id="@+id/detailProductBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marca"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold"/>
+
+        <!-- Precio de Venta -->
+        <TextView
+            android:id="@+id/detailProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio de Venta"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold" />
+
+        <!-- Precio de Costo -->
+        <TextView
+            android:id="@+id/detailProductCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio de Costo"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold" />
+
+        <!-- Existencia -->
+        <TextView
+            android:id="@+id/detailProductExistence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Existencia"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold" />
+
+        <!-- Fecha de Ingreso -->
+        <TextView
+            android:id="@+id/detailProductDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Ingreso"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/detailProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Descripción"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>

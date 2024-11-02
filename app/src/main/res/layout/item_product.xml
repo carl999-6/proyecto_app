@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/bg_product_item">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/light_background"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/laptop" />
+
+    <!-- Sección de detalles del producto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Precio del producto (Sustituye a la valoración) -->
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$128"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- Nombre del producto (Centrado) -->
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="T-shirt Black"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Marca del producto (Sustituye al precio) -->
+        <TextView
+            android:id="@+id/productBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Brand Name"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:paddingEnd="8dp" />
+    </LinearLayout>
+
+    <!-- Descripción del producto -->
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="pantalla 15.6 Otro N/A Capacidad de memoria RAM 8 GB Tipo Procesador Intel Core i5 Almacenamiento N/A Sistema Operativo Windows 11 Conexion Wi-Fi Si Camara Web Yes Pantalla tactil No Capacidad SSD 512 GB Conexion Bluetooth Si Tipo de uso Esencial Duracion de bateria HASTA 8 HORAS Almacenamiento de estado solido Yes"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+
+</LinearLayout>
